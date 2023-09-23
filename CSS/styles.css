@@ -1,0 +1,111 @@
+/* Navgational links CSS */
+.headerlinks {
+  line-height: 1.5;
+}
+
+.headerlinks .webstudio {
+  text-decoration: none;
+  font-weight: 800;
+  font-family: 'raleway', sans-serif;
+}
+
+.headerlinks .link {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 16px;
+}
+
+.headerlinks .link2 {
+  text-decoration: none;
+  font-weight: normal;
+  color: black;
+  font-size: 16px;
+}
+.link:hover {
+  color: gray;
+}
+.link2:hover {
+  color: gray;
+}
+
+/* Title heading CSS */
+
+button:hover {
+  background-color: #4d5ae5;
+  color: #f4f4fd;
+}
+
+.title {
+  background-color: #2e2f42;
+  font-size: 40px;
+  color: #f4f4fd;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+}
+
+.button {
+  text-align: left;
+  color: #f4f4fd;
+}
+button {
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Main CSS */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #2e2f42;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* Content2 CSS */
+.content2title {
+  text-align: center;
+}
+
+/* Content3 CSS */
+.content3title {
+  text-align: center;
+}
+
+.content3details {
+  padding-bottom: 1%;
+}
+
+/*footer CSS*/
+
+.footer {
+  background-color: #2e2f42;
+}
+
+.footer .webstudio {
+  text-decoration: none;
+  font-weight: 800;
+  font-family: 'raleway', sans-serif;
+}
+
+.footerdetails {
+  color: #f4f4fd;
+  font-size: 14px;
+}
+
+/***porfolio page styles***/
+
+/* Portfolio main Css*/
+
+.portfoliodetails {
+  padding-bottom: 1%;
+}
