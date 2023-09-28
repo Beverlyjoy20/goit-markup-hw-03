@@ -1,22 +1,37 @@
-/* Navgational links CSS */
-.headerlinks {
-  line-height: 1.5;
-}
+/* Root CSS*/
+:root {
+  --Iris: #4d5ae5;
+  --Cloud: #f4f4fd;
+  --Navy-Blue: #2e2f42;
+  --White: #fff;
+  --Cornflower: #e7e9fc;
 
+  /* Navgational links CSS */
+}
+.headerlinks {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-right: 50px;
+  margin-left: 50px;
+  flex-wrap: wrap;
+}
 .headerlinks .webstudio {
   text-decoration: none;
   font-weight: 800;
   font-family: 'raleway', sans-serif;
 }
 
-.headerlinks .link {
+.headerlinks-left .link {
+  /*text decorations*/
   text-decoration: none;
   font-weight: bold;
   color: black;
   font-size: 16px;
 }
 
-.headerlinks .link2 {
+.headerlinks-right .link2 {
+  /*text decorations*/
   text-decoration: none;
   font-weight: normal;
   color: black;
@@ -29,66 +44,148 @@
   color: gray;
 }
 
+.headerlinks-left {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+}
+
+.headerlinks-right {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+}
+
 /* Title heading CSS */
 
 button:hover {
-  background-color: #4d5ae5;
-  color: #f4f4fd;
+  background-color: var(--Iris);
+  color: var(--Cloud);
 }
 
 .title {
-  background-color: #2e2f42;
+  background-color: var(--Navy-Blue);
   font-size: 40px;
-  color: #f4f4fd;
-  text-transform: uppercase;
+  color: var(--Cloud);
+}
+
+.title {
   text-align: center;
   font-weight: 900;
+
+  /*margins and padding*/
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.herotitle {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  border: 0;
 }
 
 .button {
-  text-align: left;
-  color: #f4f4fd;
+  text-align: center;
+  color: var(--Cloud);
 }
+
 button {
   border-radius: 4px;
   cursor: pointer;
+  background-color: var(--Iris);
+  color: var(--Cloud);
+
+  /*margins and padding*/
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border: 4px;
 }
 
 /* Main CSS */
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #2e2f42;
+  color: var(--Navy-Blue);
 }
 ul {
-  padding: 0;
-  margin: 0;
   list-style-type: none;
 }
 li {
-  padding: 0;
-  margin: 0;
   list-style-type: none;
+}
+/* Content1 CSS */
+
+.content1 {
+  display: inline-flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 /* Content2 CSS */
 .content2title {
   text-align: center;
 }
-
+.content2images {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 16px;
+}
 /* Content3 CSS */
-.content3title {
+
+.content3 {
+  background-color: var(--Cloud);
   text-align: center;
 }
 
+.content3profiles {
+  /*design*/
+  background-color: var(--White);
+  border-radius: 0px 0px 4px 4px;
+  background: var(--WHITE, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
+  /*flex and alignment*/
+  display: inline-flex;
+  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+
+  /*paddings and margins*/
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 120px;
+}
+.content3title {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 72px;
+}
+
 .content3details {
-  padding-bottom: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 32px;
+  gap: 8px;
 }
 
 /*footer CSS*/
 
 .footer {
-  background-color: #2e2f42;
+  background-color: var(--Navy-Blue);
 }
 
 .footer .webstudio {
@@ -98,7 +195,7 @@ li {
 }
 
 .footerdetails {
-  color: #f4f4fd;
+  color: var(--Cloud);
   font-size: 14px;
 }
 
