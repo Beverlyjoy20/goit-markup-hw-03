@@ -18,11 +18,12 @@
   flex-wrap: wrap;
   border-bottom: 1px solid var(--Cornflower);
 }
-.headerlinks .webstudio {
+.webstudio {
   text-decoration: none;
   font-weight: 800;
   font-family: 'raleway', sans-serif;
-  padding-right: 32px;
+  padding-right: 38px;
+  cursor: pointer;
 }
 
 .headerlinks-left .link {
