@@ -1,3 +1,17 @@
+/*Global CSS*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1158px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Root CSS*/
 :root {
   --Iris: #4d5ae5;
@@ -12,11 +26,13 @@
 .headerlinks {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: row;
-  margin-right: 156px;
-  margin-left: 156px;
+  padding-left: 75px;
+  padding-right: 75px;
   flex-wrap: wrap;
   border-bottom: 1px solid var(--Cornflower);
+  height: 72px;
 }
 .webstudio {
   text-decoration: none;
@@ -32,7 +48,8 @@
   font-weight: bold;
   color: black;
   font-size: 16px;
-  padding-left: 8px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .headerlinks-right .link2 {
@@ -41,6 +58,7 @@
   font-weight: normal;
   color: black;
   font-size: 16px;
+  padding-right: 20px;
 }
 .link:hover {
   color: gray;
@@ -51,14 +69,10 @@
 
 .headerlinks-left {
   display: inline-block;
-  margin: 8px;
-  padding: 8px;
 }
 
 .headerlinks-right {
   display: inline-block;
-  margin: 8px;
-  padding: 8px;
 }
 
 /* Title heading CSS */
@@ -75,19 +89,21 @@ button:hover {
 }
 
 .title {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   font-weight: 900;
+  flex-shrink: 0;
 
   /*margins and padding*/
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .herotitle {
-  margin-top: 0;
-  margin-bottom: 48px;
-  padding: 0;
   border: 0;
+  padding-bottom: 24px;
 }
 
 .button {
@@ -110,7 +126,10 @@ button {
 }
 
 /* Main CSS */
-
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--SLATE);
@@ -129,19 +148,25 @@ h2 {
 
 .content1 {
   /*flex and alignment*/
-  display: inline-flex;
-  justify-content: space-evenly;
-  flex-wrap: nowrap;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  padding-left: 150px;
-  padding-right: 150px;
+  display: flex;
+  justify-content: center;
+  flex: auto;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .content1details {
-  padding-left: 4px;
-  padding-right: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 8px;
+  font-size: 16px;
   font-family: 'roboto', sans-serif;
+  height: auto;
+}
+
+.content1details h3 {
+  margin-bottom: 8px;
 }
 
 /* Content2 CSS */
@@ -154,13 +179,10 @@ h2 {
   flex-wrap: nowrap;
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-left: 8px;
-  margin-right: 8px;
-  padding: 8px;
 }
 
 .images {
-  margin: 16px;
+  margin: 12px;
   border: 1px solid var(--Cornflower);
 }
 
@@ -169,6 +191,8 @@ h2 {
 .content3 {
   background-color: var(--Cloud);
   text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .content3profiles {
@@ -187,8 +211,8 @@ h2 {
   justify-content: center;
 
   /*paddings and margins*/
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 8px;
+  margin-right: 8px;
   margin-bottom: 120px;
 }
 .content3title {
@@ -214,7 +238,7 @@ h2 {
   background-color: var(--Navy-Blue);
   padding-top: 75px;
   padding-bottom: 75px;
-  padding-left: 156px;
+  padding-left: 75px;
 }
 
 .footer .webstudio {
@@ -277,10 +301,13 @@ h2 {
   justify-content: flex-start;
   flex-direction: column;
   margin: 8px 8px 32px;
+
   border: 1px solid var(--Cornflower);
   text-align: left;
 }
 
 .portfoliotext {
   padding-inline-start: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
